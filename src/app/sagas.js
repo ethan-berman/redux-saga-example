@@ -1,5 +1,5 @@
 import {FETCH_DRINKS, PROCESS_FETCH, START_FETCH, END_FETCH} from "./actionTypes";
-import {getAllDrinks, wrapDrinks} from "./services";
+import {getAllDrinks} from "./services";
 import { put, takeEvery, all, call } from 'redux-saga/effects';
 
 let startFetchFun = () => {
@@ -23,7 +23,7 @@ let endFetchFun = (error) => {
 };
 export function* helloSaga() {
     yield call(console.log, "hello users");
-};
+}
 export function* fetchDrinks() {
     try {
         yield put(startFetchFun());

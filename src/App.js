@@ -9,7 +9,6 @@ function App() {
   const data = useSelector((state)=>state.data);
   useEffect(()=>{
     dispatch({"type":FETCH_DRINKS});
-    console.log(data);
   },[dispatch]);
   return (
     <div className="App">

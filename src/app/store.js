@@ -12,6 +12,4 @@ export const store = createStore(
 );
 sagaMiddleWare.run(rootSaga);
 
-const action = type => store.dispatch({type})
-
 

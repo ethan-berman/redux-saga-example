@@ -15,8 +15,3 @@ export async function getAllDrinks(){
     // console.log(res.json());
     // return res.json();
 }
-export async function wrapDrinks(){
-    getAllDrinks().then(function(res){
-        return res.json();
-    })
-}

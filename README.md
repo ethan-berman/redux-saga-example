@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+##General Info
+To run this project you need to configure the endpoints with your own API server.
 ## Available Scripts
 
 In the project directory, you can run:

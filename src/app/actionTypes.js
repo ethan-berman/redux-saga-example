@@ -1,0 +1,4 @@
+export const FETCH_DRINKS = "FETCH_DRINKS";
+export const START_FETCH = "START_FETCH_DRINKS";
+export const PROCESS_FETCH = "PROCESS_FETCH_DRINKS";
+export const END_FETCH = "END_FETCH_DRINKS";

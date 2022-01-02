@@ -1,7 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import {useDispatch, useSelector} from "react-redux";
+import {useEffect} from "react";
+import {FETCH_DRINKS} from "./app/actionTypes";
 
 function App() {
+  const dispatch = useDispatch();
+  const data = useSelector((state)=>state.data);
+  useEffect(()=>{
+    dispatch({"type":FETCH_DRINKS});
+    console.log(data);
+  },[dispatch]);
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +27,13 @@ function App() {
           Learn React
         </a>
       </header>
+      <div>
+          <ul>
+        {data.map((item, index)=>
+          <li key={index}> {item.name}</li>
+        )}
+          </ul>
+      </div>
     </div>
   );
 }
